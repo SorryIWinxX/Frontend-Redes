@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Animation</title>
+</head> 
+<body>
+
+    <header>
+        <nav>
+            <h3 id="logo">Ferrari</h3>
+            <img class="hamburger"src="./Images/menu.png" onclick="toggleNav()" alt="hamburger">
+            <ul class="hamburger-menu">
+                <li><a href="">Ferrari</a>
+                    <li><a href="">About</a>
+                        <li><a href="">Stores</a>
+                            <li><a href="">Purchase</a>
+                                <li><a href="">Test drive</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="hero">
+                <!--<img src="./Images/Ferrari F8back-5.jpg" alt="">>-->
+                <h1 class="headline">Dream Big</h1>
+            </div>
+        </section>
+    </header>
+
+    <div class="slider"></div>
+    <div class="story">
+        <h1>This is the car of your dreams...</h1>
+    </div>
+    <div class="article">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ullam soluta, dolore error facilis libero deleniti placeat, asperiores sit officia sint magni ad deserunt est voluptatibus consectetur eos iste eius!</p>
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+        
+        <script src="app.js"></script>
+        <script src="menu.js"></script>
+    
+</body>
+</html>

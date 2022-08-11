@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff2800;
+    z-index: -1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    color: #fff;
+    align-items: center;
+    
+}
+
+#logo {
+    grid-column: 2/3;
+    font-size: 3rem;
+
+}
+.hamburger {
+    justify-self: end;
+    
+}
+img.hamburger {
+    width: 45px;
+    cursor: pointer;
+}
+img.hamburger:hover {
+    background-color: seashell;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, red, black);
+    border-image-slice: 1;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    background: #fff;
+}
+.hamburger-menu ul {
+    transition: all 2s ease-in-out;
+}
+.hamburger-menu li {
+    list-style: none;
+    transition: all 2s ease-in-out;
+    text-align: center;
+    transition: 2s ease-in-out ;
+}
+.hamburger-menu a {
+    text-decoration: none;
+    line-height: 30px;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 1s ease-in-out;
+}
+.hamburger-menu a:hover{
+    color: red;
+    background: #eee;
+}
+section {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    background-image: url(./Images/Ferrari\ F8back-5.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    transition: .4s;
+}
+
+.hero:hover{
+    background-image: url(./Images/Ferrari.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}*/
+
+.headline {
+    position: absolute;
+    top: 60%;
+    left:10%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);
+    color: #fff;
+    z-index: 2;
+
+}
+.hero::after {
+    content: "";
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.3;
+    top: 0;
+}
+.story {
+    padding: 5em 0;
+    text-align: center;
+    
+}
+.story h1 {
+    color: rgb(119, 110, 110);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+.article {
+    width: 100%;
+    text-align: center;
+    
+}
+.article p {
+    width: 60%;
+    margin: auto;
+    color: #000;
+    font-family: 'Oxygen', sans-serif; 
+    font-size: 1.3rem;
+    padding-bottom: 1em;
+}

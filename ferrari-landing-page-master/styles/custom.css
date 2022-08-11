@@ -1,0 +1,83 @@
+body {
+  font-family: avenir !important;
+}
+
+.hero {
+  background: black url(../images/Ferrari-488-Pista.jpeg) center / cover;
+}
+
+.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+img.logo {
+  width: 8rem;
+  height: 1.3rem;
+}
+
+.hamburger {
+  width: 3rem;
+  height: 3rem;
+  font-size: 16px;
+}
+
+.title-position {
+  top: 90px;
+}
+
+.footer-position {
+  padding: 2rem;
+}
+
+a.navbar-item-hover {
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+a.navbar-item-hover:hover {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+a.button {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: black url(../images/Ferrari-488-Pista2.jpeg) center / cover;
+  }
+}
+
+@media (max-width: 512px) {
+  .description-dimension {
+    width: 75%;
+    padding-bottom: 20px;
+  }
+}
