@@ -4,20 +4,22 @@
   --mainBlue:#40ACF1;
   --transparentBlue:rgba(64, 172, 241,0.7);
   --mainWhite:#FFFFFF;
-  --mainBlack:#292F36;
+  --mainBlack:#181818;
   --mainGrey:rgb(216, 214, 214);
   --mainYellow:#e3b505;
+  --mainBlueWhite:#B0D9D5;
+  --mainOrange:#F25C05;
 }
 
 
 body{
   font-family: 'Roboto', sans-serif;
-  color: var(--mainBlack);
-  background: var(--mainWhite);
+  color: var(--mainWhite);
+  background: var(--mainOrange);
 }
 /* section title */
 .section-title--special{
-  background: var(--transparentBlue);
+  background: var(--mainBlack);
   color: var(--mainWhite);
   padding: 0.5rem 2rem;
   clip-path: polygon(10% 0, 100% 0, 90% 100%,0 100%);
@@ -29,31 +31,39 @@ body{
   bottom:0;
   left:0;
   right:0;
-  background: var(--mainWhite);
+  background: var(--mainBlack);
   z-index: 999;
 }
 .hidePreloader{
   display: none!important;
 }
 
+.color-icon{
+  color:var(--mainBlack);
+}
 
 
+.fas{
+  color: var(--mainBlack);
+}
+.nameuser1{
 
-
+  color: var(--mainBlack);
+}
 
 /* navbar */
 .navbar{
-  background: var(--mainWhite);
+  background: var(--mainBlack);
 }
 .navbar-icon{
   font-size: 2rem;
-  color: var(--mainBlue);
+  color: var(--mainOrange);
 }
 .navbar-toggler{
   outline-color: var(--mainBlue)!important;
 }
 .nav-link{
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   text-transform: capitalize;
 }
 .nav-link:hover{
@@ -78,7 +88,7 @@ body{
 }
 .height-max{
   min-height: calc(100vh - 76px);
-  background:url('../img/headerBcg.jpeg');
+  background:url('../img/mclaren-620r-novitec-2021-5k-8k-7000x4669-3401.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -105,8 +115,8 @@ body{
 
 
 .title-heading{
-  background: rgba(0,0,0,0.4);
-  border-left: 0.3rem solid var(--mainBlue);
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 0.3rem solid var(--mainOrange);
 }
 .title{
   font-weight: 700;
@@ -128,8 +138,8 @@ body{
 /* skills */
 .skills-icon{
   font-size: 3rem;
-  color: var(--mainYellow);
-  background: var(--mainGrey);
+  color: var(--mainWhite);
+  background: var(--mainBlack);
 }
 .skills-icon:hover{
   color: var(--mainYellow);
@@ -137,12 +147,12 @@ body{
 .skills-underline{
   width: 4rem;
   height: 0.3rem;
-  background: var(--mainBlue);
+  background: var(--mainOrange);
   margin: 1rem auto;
 }
 /* inventory */
 .inventory{
-  background: var(--mainGrey);
+  background: var(--mainBlack);
 }
 .car-card{
   border-radius: 0!important;
@@ -152,7 +162,7 @@ body{
   border-top-right-radius: 0;
 }
 .car-value{
-  background: var(--mainBlue);
+  background: var(--mainOrange);
   color: var(--mainWhite);
   clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
   transition: all 1s linear;
@@ -162,22 +172,22 @@ body{
 }  
 /* question */
 .question{
-  background: url('../img/questionBcg.jpeg')center/cover fixed no-repeat;
+  background: url('../img/2022-Formula1-Mercedes-AMG-W13-F1-E-Performance-004-2160.jpg')center/cover fixed no-repeat;
 }
 .question-grey{
-  background: rgba(79,109,122,0.75);
+  background: #04D9C4;
 }
 .question-yellow{
   background: rgba(227,181,5,0.75);
 }
 .question-icon{
   font-size: 4rem;
-  color: var(--mainBlue);
+  color: var(--mainWhite);
   transition: all 0.5s ease-in-out;
 }
 .question-icon:hover{
 transform: translateY(-10%);
-color: var(--mainBlue);
+color: #00010D;
 }
 .question-info{
   color:var(--mainWhite);
@@ -361,7 +371,7 @@ background: var(--mainBlack);
 .footer-icon{
   font-size: 1.5rem;
   text-decoration: none;
-  color: var(--mainYellow);
+  color: var(--mainOrange);
   transition: all 1s ease-in-out;
 }
 .footer-icon:hover{
